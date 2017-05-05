@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 锁屏主界面设置 -->
+	<!-- 未读短信/未接来电数字标记大小 -->
+	<string name="lock_main_number_text_size">10</string>
+	<!-- 未读短信/未接来电数字标记颜色-->
+	<string name="lock_main_number_text_color">#ffffff</string>
+	
+	<!-- 日期文字大小 -->
+	<string name="lock_main_date_text_size">18</string>
+	<!-- 日期文字颜色 -->	
+	<string name="lock_main_date_text_color">#ffffff</string>	
+	
+	
+	<!-- 锁屏主界面坐标 -->
+	
+	<!-- 锁屏托盘X轴中心 -->
+  <string name="lock_tray_center_x">160</string>
+  <!-- 锁屏托盘Y轴中心 -->
+  <string name="lock_tray_center_y">300</string>   
+   
+  <!-- 日期显示X轴坐标 -->
+  <string name="lock_main_date_x">30</string>
+  <!-- 日期显示Y轴坐标 -->
+  <string name="lock_main_date_y">180</string>
+  
+  <!-- 时间显示第一数字X轴中心 -->
+  <string name="lock_main_time_first_x">40</string>
+  <!-- 时间显示第一数字Y轴中心 -->
+  <string name="lock_main_time_first_y">120</string>
+  
+  <!-- 时间显示第二数字X轴中心 -->
+  <string name="lock_main_time_two_x">70</string>
+  <!-- 时间显示第二数字Y轴中心 -->
+  <string name="lock_main_time_two_y">120</string>
+  
+  <!-- 时间显示冒号X轴中心 -->
+  <string name="lock_main_time_colon_x">100</string>
+  <!-- 时间显示冒号Y轴中心 -->
+  <string name="lock_main_time_colon_y">120</string>
+  
+  <!-- 时间显示第三数字X轴中心 -->
+  <string name="lock_main_time_three_x">125</string>
+  <!-- 时间显示第三数字Y轴中心 -->
+  <string name="lock_main_time_three_y">120</string>
+  
+  <!-- 时间显示第四数字X轴中心 -->
+  <string name="lock_main_time_four_x">155</string>
+  <!-- 时间显示第四数字Y轴中心 -->
+  <string name="lock_main_time_four_y">120</string>
+  
+  <!-- 未接来电托盘X轴中心 -->
+  <string name="missed_call_info_tray_center_x">270</string>
+  <!-- 未接来电托盘Y轴中心 -->
+  <string name="missed_call_info_tray_center_y">110</string>
+  
+  <!-- 短信提示托盘X轴中心 -->
+  <string name="unread_sms_info_tray_center_x">270</string>
+  <!-- 短信提示托盘Y轴中心 -->
+  <string name="unread_sms_info_tray_center_y">200</string>
+    
+</resources>

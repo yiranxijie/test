@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="#ff000000" android:gravity="center" android:id="@id/framework_viewfactory_refresh_btn" android:background="@drawable/lcc_blank_page_retry_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/framework_viewfactory_err_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="网络连接失败,再试试吧~" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff666666" android:gravity="center" android:id="@id/framework_viewfactory_err_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_neterror_tips" />
+    </LinearLayout>
+</LinearLayout>

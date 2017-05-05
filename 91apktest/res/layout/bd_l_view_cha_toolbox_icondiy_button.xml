@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#80000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cha_button_shope_seekbar_alpha" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_l_cha_seekbar_m_t_size" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:background="@drawable/bd_l_create_menu_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="透明度" />
+        <SeekBar android:id="@id/cha_button_alpha_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/locker_seekbar" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cha_button_shope_seekbar_size" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_l_cha_seekbar_m_t_size" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:background="@drawable/bd_l_create_menu_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="大    小" />
+        <SeekBar android:id="@id/cha_button_size_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/locker_seekbar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cha_button_shope_seekbar_size" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_l_cha_seekbar_m_t_size" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:background="@drawable/bd_l_create_menu_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="连    线" />
+        <com.baidu.passwordlock.view.ColorPickerView android:id="@id/cha_line_color_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cha_button_shope_seekbar_size" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_l_cha_seekbar_m_t_size" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:background="@drawable/bd_l_create_menu_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="日    期" />
+        <com.baidu.passwordlock.view.ColorPickerView android:id="@id/cha_date_color_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cha_button_shope_seekbar_size" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_l_cha_seekbar_m_t_size" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:background="@drawable/bd_l_create_menu_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="电    量" />
+        <com.baidu.passwordlock.view.ColorPickerView android:id="@id/cha_battery_color_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

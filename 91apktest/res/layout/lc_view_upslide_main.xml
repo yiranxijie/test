@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/zns_sl_rl_base" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/zns_sl_rl_center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/toolboxmanager">
+            <com.baidu.screenlock.core.lock.widget.UpSlideDateView android:id="@id/zns_sl_rl_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="130.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.baidu.screenlock.core.lock.widget.Ios8ToolBoxViewManager android:id="@id/toolboxmanager" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <com.baidu.screenlock.core.lock.widget.Ios8LockColorPicker android:id="@id/zns_slide_container_color_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.screenlock.core.lock.widget.Ios8LockTipEditView android:id="@id/zns_slide_container_tipedit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.screenlock.core.lock.lockview.upslide.UpSlideTipTextView android:id="@id/zns_slide_container_up_tips" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

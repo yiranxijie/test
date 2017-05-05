@@ -1,0 +1,55 @@
+.class Lcom/baidu/screenlock/lockcore/activity/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field final synthetic a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/baidu/screenlock/lockcore/activity/c;->a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/baidu/screenlock/lockcore/activity/c;->a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+    invoke-static {v0, p1}, Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;->a(Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;Landroid/view/View;)V
+
+    iget-object v0, p0, Lcom/baidu/screenlock/lockcore/activity/c;->a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+    invoke-static {v0}, Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;->f(Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
+
+    iget-object v0, p0, Lcom/baidu/screenlock/lockcore/activity/c;->a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+    invoke-static {v0}, Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;->f(Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/baidu/screenlock/lockcore/activity/c;->a:Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;
+
+    invoke-static {v1}, Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;->h(Lcom/baidu/screenlock/lockcore/activity/LockMainActivity;)Lcom/baidu/screenlock/theme/PandaThemeTabView;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
+
+    return-void
+.end method

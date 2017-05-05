@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_l_cha_icon_create_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/cha_character_menu_top" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentBottom="true">
+        <include layout="@layout/bd_l_view_cha_create_bottom_menu_top" />
+    </FrameLayout>
+    <com.baidu.passwordlock.character.PwdCharView android:id="@id/bd_l_cha_icon_pwdview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cha_character_menu_top" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/cha_password_btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/bd_l_back_btn" android:scaleType="fitCenter" />
+</RelativeLayout>

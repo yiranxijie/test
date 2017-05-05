@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bd_l_num_pwd_ll_root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bd_l_cha_create_center_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bd_l_cha_create_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.baidu.passwordlock.character.PwdCharView android:id="@id/lk_character_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/bd_l_cha_icon_bottom_menu_height" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/cha_password_setting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/cha_password_ll_random" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/bd_l_random" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/cha_password_btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/bd_l_back_btn" android:scaleType="fitCenter" />
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/cha_character_menu_top" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/bd_l_cha_icon_bottom_menu_height" android:layout_alignParentBottom="true">
+            <include layout="@layout/bd_l_view_cha_create_bottom_menu_top" />
+        </FrameLayout>
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bd_l_view_cha_create_bottm_menu1" />
+    </FrameLayout>
+</FrameLayout>

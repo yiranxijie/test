@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/setting_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/weather_shape_titlebk" android:layout_width="fill_parent" android:layout_height="@dimen/toolbarsize">
+        <Button android:id="@id/setting_weather_btn_back" style="@style/backButton" />
+        <TextView android:id="@id/setToolTextid" android:layout_marginRight="5.0dip" android:text="自动更新天气" android:layout_alignParentRight="true" style="@style/titleText_w" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="7.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/setting_item_multiple_ll">
+            <LinearLayout android:id="@id/setting_weather_update_ll" style="@style/setting_item_sub_ll">
+                <TextView android:text="自动更新天气" style="@style/setting_item_title_textview" />
+                <TextView android:id="@id/setting_weather_update_state" android:text="自动" style="@style/setting_item_state_textview" />
+                <CheckBox android:id="@id/setting_weather_update_check" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:checked="true" android:button="@drawable/weather_checkbox_selector" />
+            </LinearLayout>
+            <View style="@style/setting_item_divider" />
+            <LinearLayout android:id="@id/setting_weather_time_ll" style="@style/setting_item_sub_ll">
+                <TextView android:text="起止时间" style="@style/setting_item_title_textview" />
+                <TextView android:id="@id/setting_weather_time_state" style="@style/setting_item_state_textview" />
+                <ImageView style="@style/setting_item_open_image" />
+            </LinearLayout>
+            <View style="@style/setting_item_divider" />
+            <LinearLayout android:id="@id/setting_weather_4interval_ll" style="@style/setting_item_sub_ll">
+                <TextView android:text="更新间隔--四天天气" style="@style/setting_item_title_textview" />
+                <TextView android:id="@id/setting_weather_4interval_state" style="@style/setting_item_state_textview" />
+                <ImageView style="@style/setting_item_open_image" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

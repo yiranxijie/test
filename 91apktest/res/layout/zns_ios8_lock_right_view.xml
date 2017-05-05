@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/zns_sl_rl_base" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/zns_sl_rl_touch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/toolboxmanager">
+            <com.baidu.screenlock.core.lock.widget.Ios8DateView android:id="@id/zns_sl_rl_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/zns_sl_rl_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_below="@id/zns_sl_rl_date">
+                <com.baidu.screenlock.core.lock.widget.ShimmerTextView android:textSize="20.0sp" android:gravity="center" android:id="@id/zns_sl_slide_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/zns_ios8_slide_tip_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.baidu.screenlock.core.lock.widget.Ios8ToolBoxViewManager android:id="@id/toolboxmanager" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.baidu.screenlock.core.lock.widget.Ios8LockColorPicker android:id="@id/zns_slide_container_color_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.screenlock.core.lock.widget.Ios8LockTipEditView android:id="@id/zns_slide_container_tipedit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

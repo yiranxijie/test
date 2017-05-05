@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/myphone_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/lock_main_title" />
+    <FrameLayout android:id="@id/themeLayout" android:background="@drawable/myphone_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.baidu.screenlock.theme.LockThemeTabView android:id="@id/tabview" android:background="@drawable/myphone_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_pandahome" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_main_lock" android:background="@drawable/theme_main_bg_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/theme_main_lock_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_mian_lock_2" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/theme_main_lock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_main_lock" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_main_launcher" android:background="@drawable/theme_main_bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/theme_main_launcher_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_mian_launcher_1" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff939393" android:id="@id/theme_main_launcher_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_main_launcher" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

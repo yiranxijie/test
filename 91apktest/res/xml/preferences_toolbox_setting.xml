@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_toolbox_tools" android:key="settings_toolbox_tools" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_toolbox_camera" android:key="settings_toolbox_camera" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+</PreferenceScreen>

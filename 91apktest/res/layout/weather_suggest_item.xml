@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/t_alert_title" android:gravity="right" android:layout_width="62.0dip" android:layout_height="wrap_content" android:text="建议:" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff454545" android:id="@id/suggestText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:lineSpacingExtra="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/t_alert_title" android:gravity="right" android:layout_width="62.0dip" android:layout_height="wrap_content" android:text="官方应答:" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/t_alert_info" android:id="@id/respondText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:lineSpacingExtra="7.0dip" />
+    </LinearLayout>
+</LinearLayout>

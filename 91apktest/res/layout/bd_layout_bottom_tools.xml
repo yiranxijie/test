@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_toolboxbtn" android:paddingLeft="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/btn_toolbox" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/zns_slide_lock_toolbox_selector" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_weight="4.0">
+        <RelativeLayout android:id="@id/layout_phone" android:paddingLeft="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_phone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/zns_ios8_phone" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/txt_phone" android:background="@drawable/zns_ios8_notice" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginBottom="-16.0dip" android:text="15" android:layout_toRightOf="@id/btn_phone" android:layout_above="@id/btn_phone" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_sms" android:paddingLeft="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_sms" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/zns_ios8_sms_active" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_sms" android:background="@drawable/zns_ios8_notice" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginBottom="-16.0dip" android:text="15" android:layout_toRightOf="@id/btn_sms" android:layout_above="@id/btn_sms" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_camera" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/btn_camera" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/zns_slide_lock_camera_selector" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

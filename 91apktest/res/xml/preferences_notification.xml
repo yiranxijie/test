@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_notification_lock_switch" android:key="setttings_lock_notification" android:summary="@string/settings_notification_lock_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_notification_lock_bright" android:key="settings_lock_notification_wake_up" android:summary="@string/settings_notification_lock_bright_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_notification_lock_hide_content" android:key="settings_lock_notification_hide_content" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_notification_lock_receive_app" android:key="settings_notification_receive_app" android:summary="@string/settings_notification_lock_receive_app_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+</PreferenceScreen>

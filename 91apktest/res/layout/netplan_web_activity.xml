@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/web_progress_bar_fl" android:background="@drawable/nd_hilauncher_theme_webload_process_title_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_alignParentTop="true">
+        <ProgressBar android:id="@id/web_progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progressDrawable="@drawable/nd_hilauncher_theme_webload_progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+    </FrameLayout>
+    <WebView android:id="@id/theme_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/downtask" android:layout_below="@id/web_progress_bar_fl" />
+</RelativeLayout>

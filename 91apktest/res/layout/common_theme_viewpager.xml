@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nd.hilauncherdev.framework.view.MyPhoneViewPagerTab android:id="@id/pagertab" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <com.baidu.screenlock.theme.LockThemeLazyViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

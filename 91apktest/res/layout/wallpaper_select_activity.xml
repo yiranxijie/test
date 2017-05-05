@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/activity_title_head" android:background="#ffefeff0" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="@dimen/myphone_title_text_size" android:textColor="@color/myphone_common_title_color1" android:gravity="center" android:id="@id/preference_activity_title_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="背景选择" />
+        <LinearLayout android:gravity="center" android:id="@id/preference_activity_title_image" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/lcc_common_menu_back_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bd_zns_wp_select_bottom" android:layout_below="@id/activity_title_head">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="这里排列服务器的主题" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/bd_zns_wp_select_bottom" android:background="@drawable/lcc_tme_downtask_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/bd_zns_wp_local_btn" android:background="@drawable/lcc_blue_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="从手机中选取" />
+    </LinearLayout>
+</RelativeLayout>

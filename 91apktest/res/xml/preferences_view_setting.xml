@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_notification_lock_view_anim" android:key="home_common_category">
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_anim_screen_on" android:key="settings_anim_screen_on" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+        <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_unlock_animation" android:key="unlock_animation_type" android:summary="@string/settings_safe_password_bak_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_notification_lock_view_display" android:key="home_common_category">
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_home_toolbox" android:key="settings_home_toolbox" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_ios8_is_open_lunar" android:key="settings_ios8_is_open_lunar" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_full_screen" android:key="settings_switch_full_screen" android:summary="@string/settings_switch_full_screen_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_notification_disable" android:key="settings_switch_lock_notification_disable" android:summary="@string/settings_switch_notification_disable_tips" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+</PreferenceScreen>

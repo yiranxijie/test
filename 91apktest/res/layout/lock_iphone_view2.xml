@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/energy_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:id="@id/battery_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/s_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/s_rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/s_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/s_inslide" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <cn.com.nd.s.widget.FlickerText android:textSize="20.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_slide_unlock" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <cn.com.nd.s.widget.SlidingTabLock android:id="@id/s_slide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/s_un_lock_block" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </cn.com.nd.s.widget.SlidingTabLock>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

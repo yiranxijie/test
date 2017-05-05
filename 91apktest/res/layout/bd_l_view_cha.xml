@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/bd_l_num_pwd_ll_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_l_cha_create_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bd_l_cha_create_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/bd_l_cha_ll_date" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.5" />
+        <RelativeLayout android:id="@id/bd_l_num_rl_tip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7">
+            <TextView android:textSize="@dimen/bd_l_cha_numb_item_tip_txt_size" android:textColor="#ffffffff" android:id="@id/bd_l_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.baidu.passwordlock.character.PwdCharCenterView android:id="@id/bd_l_cha_center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/bd_l_cha_numb_area_m_t_size" android:layout_weight="7.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <com.baidu.passwordlock.character.PwdCharChargeView android:id="@id/bd_l_cha_charge" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

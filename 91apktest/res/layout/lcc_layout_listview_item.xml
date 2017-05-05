@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/listitem1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include layout="@layout/lcc_layout_listview_item_base" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/listitem2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include layout="@layout/lcc_layout_listview_item_base" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/listitem3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include layout="@layout/lcc_layout_listview_item_base" />
+    </LinearLayout>
+</LinearLayout>

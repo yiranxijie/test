@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_home_common" android:key="home_common_category">
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_open_zns" android:key="settings_open_zns" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_follow_launcher_change_skin" android:key="settings_follow_launcher_change_skin" android:summary="@string/settings_follow_launcher_change_skin_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_notification_lock_enter" android:key="setttings_lock_notification_enter" android:summary="@string/settings_notification_lock_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_notification_lock_view" android:key="setttings_lock_view_setting" android:summary="@string/settings_notification_lock_view_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_lock_tone" android:key="lock_tone" android:summary="@string/settings_default_clear_lock_tone" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_change_lock_wallpaper" android:key="settings_change_lock_wallpaper" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_safe_setting" android:key="home_advanced_category">
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_start_system_password" android:key="settings_start_system_password" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_safe" android:key="settings_safe" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_home_advanced" android:key="home_advanced_category">
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_initial" android:key="settings_initial" android:summary="@string/settings_initial_tips" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_home_more" android:key="settings_home_more" android:summary="@string/settings_more_tips_2" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_home_other">
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_common_question" android:key="settings_common_question" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_feedback" android:key="settings_feedback" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_about_zns" android:key="settings_about_zns" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+        <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_reboot" android:key="settings_reboot" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/myphone_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_connection_top" android:background="@drawable/common_title_bg" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textSize="@dimen/myphone_title_text_size" android:textColor="@color/myphone_common_title_color1" android:gravity="center" android:id="@id/preference_activity_title_text" android:layout_width="fill_parent" android:layout_height="@dimen/myphone_top_content" android:text="123" />
+        <LinearLayout android:gravity="center" android:id="@id/preference_activity_title_image" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_menu_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <GridView android:gravity="center" android:id="@id/themeiconlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="10.0dip" android:numColumns="4" />
+</LinearLayout>

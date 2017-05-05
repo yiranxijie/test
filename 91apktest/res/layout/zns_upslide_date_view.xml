@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="60.0sp" android:textColor="#ffffffff" android:ellipsize="none" android:id="@id/zns_sd_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" android:text="12:12" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zns_sd_ll_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/zns_sd_date" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07/15" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/zns_sd_week" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="星期三" />
+        <ImageView android:id="@id/zns_us_date_weather_icon" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="15.0sp" android:id="@id/zns_us_date_weather_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26℃" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/zns_sd_battery" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:text="正在充电（55%）" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/zns_sd_lunar" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:text="四月初五（农）" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/zns_us_date_tips" android:background="#fff8c068" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:text="遇见你，真美好" android:drawableLeft="@drawable/zns_upslide_date_image" android:drawablePadding="5.0dip" />
+</LinearLayout>

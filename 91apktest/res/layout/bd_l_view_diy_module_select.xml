@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_l_diy_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bd_l_diy_ll_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bd_l_diy_rl_bottom">
+        <RelativeLayout android:id="@id/bd_l_diy_rl_date" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="3.0">
+            <com.baidu.passwordlock.character.diy.DiyDateView android:id="@id/bd_l_diy_date" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <View android:id="@id/bd_l_diy_date_touch" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bd_l_diy_rl_center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/bd_l_cha_numb_area_m_t_size" android:layout_weight="7.0">
+            <com.baidu.passwordlock.character.PwdCharCenterView android:id="@id/bd_l_diy_center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <View android:id="@id/bd_l_diy_center_touch" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bd_l_diy_rl_battery" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <com.baidu.passwordlock.character.PwdCharChargeView android:id="@id/bd_l_diy_charge" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <View android:id="@id/bd_l_diy_battery_touch" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bd_l_diy_rl_bottom" android:background="@android:color/white" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/bd_l_cha_icon_bottom_next" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="5.0dip" android:text="@string/bd_l_cha_password_diy_notice" />
+    </RelativeLayout>
+</RelativeLayout>

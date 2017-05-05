@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/contain_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:panel="http://schemas.android.com/apk/res/cn.com.nd.s">
+    <SurfaceView android:id="@id/sur_face" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <include android:id="@id/screen_lock_right" layout="@layout/screen_lock_right" />
+</FrameLayout>

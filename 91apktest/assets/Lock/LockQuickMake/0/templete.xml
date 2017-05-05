@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lock version="1" supportid="8" screenwidth="720" screenheight="1280" rotate="0" geometric="1" retainoff="1" validate="1" plantform="3" extinfo="1"> 	
+	
+	 <SpecialHandle name="parameter" handleid="3" file="parameter.xml"/>
+	 <SpecialHandle name="animation" handleid="2" file="animation.xml"/>
+   <SpecialHandle name="SmsAndCall"  handleid="2" file="SmsAndCall.xml"/>
+	 
+	 <NodeModel type="1"/>
+	    <Image src="camera_bg.png" x="360" y="640" scaleX="36" scaleY="64"/>
+	    <Image src="camera_icon.png" x="360" y="80" scaleX="1.0/#scale_width" scaleY="1.0/#scale_height"/>
+      <Image x="360" y="640" src="bg.png">
+        <Mask src="mask.png" x="360" y="640+#ulcamera.ulmove_y+200" scaleX="36" scaleY="64">
+        </Mask>
+      </Image>
+	 <NodeModel type="0"/>
+  
+  <DateTime>
+    <!--日期时间元素-->
+    <LTime type="1" desc="image">
+      <!--时间元素 type="1" 图片型-->
+      <HourDecade src="time_%d.png" numcnt="10">
+        <!-- 小时元素 1.定义时间图片 图片源："time_%d.png" numcnt="10"从0到10张时间图片 2.时间图片只需定义一次-->
+        <Image src="time_0.png" x="#hour_decade_x?360-32-44-25-88" y="#hour_decade_y?1070+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.4" anitag="1001">
+          <!--默认图片:src="time_0.png"-->
+        </Image>
+      </HourDecade>
+      <HourBit>
+        <!-- 分钟元素 -->
+        <Image src="time_0.png" x="#hour_bit_x?360-32-44" y="#hour_bit_y?1070+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.4" anitag="1002">
+        </Image>
+      </HourBit>
+      <Colon>
+        <!-- 时间分隔符元素 -->
+        <Image src="time_dot.png" x="#colon_x?360" y="#colon_y?1070+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.4" anitag="1003">
+        </Image>
+      </Colon>
+      <MinuteDecade>
+        <!--秒十位-->
+        <Image src="time_0.png" x="#minute_decade_x?360+25+44" y="#minute_decade_y?1070+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.4" anitag="1004">
+        </Image>
+      </MinuteDecade>
+      <MinuteBit>
+        <!--秒个位-->
+        <Image src="time_0.png" x="#minute_bit_x?360+32+44+32+88" y="#minute_bit_y?1070+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.4" anitag="1005">
+        </Image>
+      </MinuteBit>
+    </LTime>
+    <LWeek type="0">
+      <!--星期元素 type="0" 文本型-->
+      <TextValue x="#week_x?360" y="#week_y?1070-50-135/2-50-16-15+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.0" size="#week_size?42" colorR="#week_color_r?255" colorG="#week_color_g?255" colorB="#week_color_b?255" alpha="#week_color_a?255" anitag="1006"></TextValue>
+    </LWeek>
+    <LDate type="0" format="yyyy/mm/dd">
+      <!--日期元素 type="0" 文本型-->
+     <TextValue x="#date_x?360" y="#date_y?1070-50-135/2-15+#offset_height+(#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200)*1.2" size="#date_size?42" colorR="#date_color_r?255" colorG="#date_color_g?255" colorB="#date_color_b?255" alpha="#date_color_a?255" anitag="1007"></TextValue>
+    </LDate>
+  </DateTime>
+
+  <!--移动根节点-->
+  <ScreenNode type="0" x="0" y="#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200">
+   <Image x="360" y="90+170" src="up.png">
+     <AlphaAnimation>
+       <Alpha a="255" time="0"/>
+       <Alpha a="200" time="400"/>
+       <Alpha a="0" time="800"/>
+       <Alpha a="200" time="1200"/>
+       <Alpha a="255" time="1600"/>
+     </AlphaAnimation>
+   </Image>
+   <TextValue x="360" y="30+150" size="30" value="向上滑动解锁" colorR="255" colorG="255" colorB="255" alpha="255"/>
+  <Image src="camera.png" x="720-32-46/2+#offset_width" y="22+10+46/2-#offset_height" visible="#unlocker.ullife^0"> 
+  </Image>
+  </ScreenNode>
+
+  <ScreenNode type="2" xml="SmsAndCall" param="Node"/>
+  
+  <!--电池组件-->
+  <Image src="battery.png" x="32+13-#offset_width" y="22+23-#offset_height+#ulcamera.ulmove_y+200+10" visible="(#charge.charge_state)*(#charge.charge_power&lt;100)">
+    <AlphaAnimation>
+      <Alpha a="255" time="0"/>
+      <Alpha a="200" time="400"/>
+      <Alpha a="0" time="800"/>
+      <Alpha a="200" time="1200"/>
+      <Alpha a="255" time="1600"/>
+    </AlphaAnimation>
+  </Image>
+  <TextValue x="88+25-#offset_width" y="22+23-#offset_height+#ulcamera.ulmove_y+200+10" size="26" format="(%.0f%%)" parse="#charge.charge_power" colorR="255" colorG="255" colorB="255" alpha="255" visible="(#charge.charge_state)*(#charge.charge_power&lt;100)"/>
+  <Image src="battery.png" x="32+13-#offset_width" y="22+23-#offset_height+#ulcamera.ulmove_y+200+10" visible="(#charge.charge_state)*(1-#charge.charge_power&lt;100)">
+  </Image>
+  <TextValue x="145-#offset_width" y="22+23-#offset_height+#ulcamera.ulmove_y+200+10" size="26" value="(充电完成)" colorR="255" colorG="255" colorB="255" alpha="255" visible="(#charge.charge_state)*(1-#charge.charge_power&lt;100)"/>
+
+  <!--相机组件-->
+  <Unlocker name="ulcamera" touchmutex="1">
+	  <EndPoint x="590+#offset_width" y="720" width="120" height="1840" name="extarea_camera1">
+	  	<Intent action="101" />
+	  	<RebackSpeed rebacktype="1" speed="3000" gravity="9.8"></RebackSpeed>
+	  	<Guestures>
+    		<GuestureOne type="0" angle="-90" offset_angle="30" distance="100" speed="60" maxdt="0.2" innerarea="extarea_camera0"/>
+    	</Guestures>
+	  </EndPoint>
+    <StartPoint x="540+#offset_width" y="-200" width="180" height="360" name="extarea_camera0">
+       <RebackSpeed rebacktype="1" speed="1800" maxdist="240" gravity="400" resilience="0.001" reducefactor="0.6" minspeed="180"></RebackSpeed>
+       <Guestures>
+    		 <GuestureOne type="0" angle="90" offset_angle="30" distance="100" speed="120" maxdt="0.2" innerarea="extarea_camera1"/>
+    	 </Guestures>
+	  </StartPoint>
+	  <Path x="0" y="0">
+        <Position x="0" y="0" />
+        <Position x="0" y="1600" />
+    </Path>
+	 </Unlocker>
+	 
+  <!--解锁区域-->
+   <Unlocker name="unlocker" touchmutex="1">
+		  <EndPoint x="359" y="1520" width="2" height="1240" name="extarea1">
+		  	<RebackSpeed rebacktype="1" speed="3000" gravity="9.8"></RebackSpeed>
+		  	<Guestures>
+      		<GuestureOne type="0" angle="-90" offset_angle="30" distance="100" speed="60" maxdt="0.2" innerarea="extarea0"/>
+      	</Guestures>
+      	<PressedState>
+           <Image src="camera.png" x="720-32-46/2+#offset_width" y="22+46/2-#offset_height">
+           	  <SizeAnimation playcnt="1">
+                <Size scalex="1" scaley="1" time="0"/>
+                <Size scalex="0" scaley="0" time="700"/>
+              </SizeAnimation> 
+              <AlphaAnimation playcnt="1">
+                <Alpha a="255" time="0"/>
+                <Alpha a="0" time="700"/>
+              </AlphaAnimation>
+	         </Image>
+        </PressedState>
+		  </EndPoint>
+      <StartPoint x="-200" y="-200" width="1120" height="1480" name="extarea0">
+         <RebackSpeed rebacktype="1" speed="1800" mindist="150" maxdist="240" gravity="400" resilience="0.001" reducefactor="0.6" minspeed="180"></RebackSpeed>
+         <Guestures>
+      		<GuestureOne type="0" angle="90" offset_angle="30" distance="100" speed="120" maxdt="0.2" innerarea="extarea1"/>
+      	 </Guestures>
+      	 <FailedState>
+      	 	  <Image src="camera.png" x="720-32-46/2+#offset_width" y="22+46/2-#offset_height">
+           	  <SizeAnimation playcnt="1">
+                <Size scalex="0" scaley="0" time="0"/>
+                <Size scalex="1" scaley="1" time="400"/>
+              </SizeAnimation> 
+              <AlphaAnimation playcnt="1">
+                <Alpha a="0" time="0"/>
+                <Alpha a="255" time="400"/>
+              </AlphaAnimation>
+	          </Image>
+      	 </FailedState>	
+		  </StartPoint>
+		  <Path x="0" y="0">
+          <Position x="0" y="0" />
+          <Position x="0" y="1400" />
+      </Path>
+	 </Unlocker>
+   
+	 <Charge name="charge" alarm="0"> <!--充电状态 alarm="60" 电量大于60% 预警动画-->
+   	   <NoState>      <!--未充电 电量大于预警值-->
+   	   </NoState>
+   	   <NormalState>  <!--充电 电量大于预警值-->
+   	   	  <!--充电电量-->
+   	   </NormalState>
+   	   <AlarmState>  <!--电量小于预警值 -->
+   	   </AlarmState>
+    </Charge>
+    
+</Lock>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/framework_viewfactory_err_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lcc_frame_viewfacotry_net_break_img" />
+    <TextView android:textSize="14.699982dip" android:textColor="#ff8d8d8d" android:gravity="center" android:id="@id/framework_viewfactory_err_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/frame_viewfacotry_net_break_text" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/framework_viewfactory_err_btn" android:background="@drawable/lcc_common_app_running_close_btn_bg" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/frame_viewfacotry_net_break_btn" />
+        <Button android:background="@drawable/lcc_common_app_running_close_btn_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frame_viewfacotry_net_break_btn" />
+        <Button android:gravity="center" android:id="@id/framework_viewfactory_refresh_btn" android:background="@drawable/lcc_common_app_running_close_btn_bg" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/theme_wallpaper_net_refresh_btn" />
+    </LinearLayout>
+</LinearLayout>

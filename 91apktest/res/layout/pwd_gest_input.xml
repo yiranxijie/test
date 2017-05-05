@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="3.0">
+        <FrameLayout android:layout_gravity="center" android:background="@color/pwd_btn_normal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#99ffffff" android:layout_gravity="center" android:id="@id/txt_pwd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opt_gest_pwd_input_title" />
+        </FrameLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="3.0dip" android:src="@drawable/ic_null" />
+        <cn.com.nd.s.pwd.GesturePwdView android:id="@id/pwd_input" android:background="@color/pwd_btn_normal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="3.0" />
+    </LinearLayout>
+</LinearLayout>

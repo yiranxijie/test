@@ -1,0 +1,151 @@
+.class Lcom/baidu/passwordlock/character/bd;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/baidu/passwordlock/b/d;
+
+
+# instance fields
+.field final synthetic a:Lcom/baidu/passwordlock/character/am;
+
+.field private final synthetic b:Lcom/baidu/passwordlock/b/a;
+
+.field private final synthetic c:Ljava/util/HashMap;
+
+.field private final synthetic d:Landroid/graphics/Bitmap;
+
+.field private final synthetic e:[Landroid/graphics/Bitmap;
+
+.field private final synthetic f:Landroid/graphics/drawable/Drawable;
+
+
+# direct methods
+.method constructor <init>(Lcom/baidu/passwordlock/character/am;Lcom/baidu/passwordlock/b/a;Ljava/util/HashMap;Landroid/graphics/Bitmap;[Landroid/graphics/Bitmap;Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    iput-object p2, p0, Lcom/baidu/passwordlock/character/bd;->b:Lcom/baidu/passwordlock/b/a;
+
+    iput-object p3, p0, Lcom/baidu/passwordlock/character/bd;->c:Ljava/util/HashMap;
+
+    iput-object p4, p0, Lcom/baidu/passwordlock/character/bd;->d:Landroid/graphics/Bitmap;
+
+    iput-object p5, p0, Lcom/baidu/passwordlock/character/bd;->e:[Landroid/graphics/Bitmap;
+
+    iput-object p6, p0, Lcom/baidu/passwordlock/character/bd;->f:Landroid/graphics/drawable/Drawable;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic a(Lcom/baidu/passwordlock/character/bd;)Lcom/baidu/passwordlock/character/am;
+    .locals 1
+
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/View;Ljava/lang/String;)V
+    .locals 7
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v1, "yy-MM-dd-H-m-s"
+
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    new-instance v2, Ljava/util/Date;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v3
+
+    invoke-direct {v2, v3, v4}, Ljava/util/Date;-><init>(J)V
+
+    invoke-virtual {v0, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Lcom/baidu/passwordlock/character/am;->a(Lcom/baidu/passwordlock/character/am;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    invoke-static {v0}, Lcom/baidu/passwordlock/character/am;->a(Lcom/baidu/passwordlock/character/am;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    iget-object v1, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    invoke-static {v1}, Lcom/baidu/passwordlock/character/am;->c(Lcom/baidu/passwordlock/character/am;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/baidu/passwordlock/character/am;->b(Lcom/baidu/passwordlock/character/am;Ljava/lang/String;)V
+
+    :cond_0
+    if-eqz p2, :cond_1
+
+    const-string v0, ""
+
+    invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    :cond_1
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    invoke-virtual {v0}, Lcom/baidu/passwordlock/character/am;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/baidu/screenlock/core/R$string;->bd_l_cha_theme_name_create_def_title:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    :goto_0
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->a:Lcom/baidu/passwordlock/character/am;
+
+    invoke-static {v0}, Lcom/baidu/passwordlock/character/am;->F(Lcom/baidu/passwordlock/character/am;)V
+
+    new-instance v0, Lcom/baidu/passwordlock/character/be;
+
+    iget-object v3, p0, Lcom/baidu/passwordlock/character/bd;->c:Ljava/util/HashMap;
+
+    iget-object v4, p0, Lcom/baidu/passwordlock/character/bd;->d:Landroid/graphics/Bitmap;
+
+    iget-object v5, p0, Lcom/baidu/passwordlock/character/bd;->e:[Landroid/graphics/Bitmap;
+
+    iget-object v6, p0, Lcom/baidu/passwordlock/character/bd;->f:Landroid/graphics/drawable/Drawable;
+
+    move-object v1, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/baidu/passwordlock/character/be;-><init>(Lcom/baidu/passwordlock/character/bd;Ljava/lang/String;Ljava/util/HashMap;Landroid/graphics/Bitmap;[Landroid/graphics/Bitmap;Landroid/graphics/drawable/Drawable;)V
+
+    invoke-static {v0}, Lcom/nd/hilauncherdev/b/a/m;->a(Ljava/lang/Runnable;)V
+
+    iget-object v0, p0, Lcom/baidu/passwordlock/character/bd;->b:Lcom/baidu/passwordlock/b/a;
+
+    invoke-virtual {v0}, Lcom/baidu/passwordlock/b/a;->dismiss()V
+
+    return-void
+
+    :cond_2
+    move-object v2, p2
+
+    goto :goto_0
+.end method

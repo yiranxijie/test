@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notice_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitXY" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:scrollbarStyle="outsideInset" android:gravity="center" android:id="@id/theme_shop_theme_list_ranking" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:divider="#00000000" android:dividerHeight="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.baidu.screenlock.core.common.widget.LoadingView android:id="@id/loadingview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

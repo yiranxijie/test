@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bd_l_ges_pwd_unlock_rl_root" android:background="@color/bd_l_ges_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/bd_l_ges_unlock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bd_l_ges_text_top_m_b_size" android:text="@string/bd_l_ges_password_guide_draw_btn" android:layout_above="@id/bd_l_ges_pwd_unlock_fl_lock_view" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/bd_l_ges_pwd_unlock_fl_lock_view" android:layout_width="fill_parent" android:layout_height="280.0dip" android:layout_marginBottom="40.0dip" android:layout_above="@id/bd_l_ges_pwd_unlock_cancel_ll">
+        <com.baidu.passwordlock.gesture.LockPatternView android:layout_gravity="center_horizontal" android:id="@id/bd_l_ges_pwd_unlock_lock_view" android:layout_width="280.0dip" android:layout_height="fill_parent" lockPatternview:lockPatternWidth="288.0dip" xmlns:lockPatternview="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/bd_l_ges_pwd_unlock_cancel_ll" android:layout_width="80.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/bd_l_ges_pwd_unlock_cancel" android:layout_width="80.0dip" android:layout_height="50.0dip" android:text="@string/bd_l_ges_cancel_btn_text" />
+    </RelativeLayout>
+</RelativeLayout>

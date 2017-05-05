@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/rlBottom" android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center|left" android:id="@id/tvDownHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/calendar_down_hint" android:layout_toLeftOf="@id/btnDownLoad" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+            <Button android:textSize="15.0sp" android:textColor="#ff4b4b4b" android:gravity="center" android:id="@id/btnDownLoad" android:background="@drawable/button_icontext_selector" android:layout_width="65.0dip" android:layout_height="33.0dip" android:layout_marginRight="20.0dip" android:text="@string/install" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/pbProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/tvProgressHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="正在加载图片，请稍候..." android:layout_below="@id/pbProgress" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_close_help" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

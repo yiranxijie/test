@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_drag_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/position_list_item_image" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="13.0dip" android:src="@drawable/position" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/normal_list_item_image" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.5dip" android:src="@drawable/city_list_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/default_text_main" android:gravity="center_vertical" android:id="@id/drag_list_item_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="39.299988dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/default_text_main" android:id="@id/drag_list_item_note" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/drag_list_item_text" android:layout_alignBaseline="@id/drag_list_item_text" />
+    <ImageView android:id="@id/drag_list_item_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/movelist" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/drag_list_item_chk_delete" android:clickable="false" android:layout_width="18.0dip" android:layout_height="fill_parent" android:layout_marginRight="23.0dip" android:button="@drawable/weather_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/nodata" android:visibility="gone" layout="@layout/lcc_layout_nodata" />
+    <include android:id="@id/neterror_layout" android:visibility="gone" layout="@layout/lcc_common_mywallpaper_neterror_setting" />
+    <include android:id="@id/loading_layout" android:visibility="gone" layout="@layout/lcc_common_loading_style_mid" />
+</RelativeLayout>

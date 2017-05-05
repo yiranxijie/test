@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bd_l_a_guide_rl_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bd_l_a_guide_miui_v6_iv" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="195.0dip" android:src="@drawable/bd_l_a_guide_rectangle" android:scaleType="fitXY" />
+        <ImageView android:id="@id/bd_l_a_guide_iv_pull_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:src="@drawable/bd_l_a_guide_pull_down" android:layout_below="@id/bd_l_a_guide_miui_v6_iv" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/bd_l_a_guide_tv_ps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:text="@string/bd_l_a_settings_open_float_window" android:layout_below="@id/bd_l_a_guide_iv_pull_down" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

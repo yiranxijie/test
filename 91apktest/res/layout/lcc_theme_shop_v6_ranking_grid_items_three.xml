@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include android:id="@id/listitem1" layout="@layout/lcc_layout_listview_item_base" />
+        <include android:id="@id/top_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/lcc_common_list_ranking_places" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include android:id="@id/listitem2" layout="@layout/lcc_layout_listview_item_base" />
+        <include android:id="@id/top_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/lcc_common_list_ranking_places" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_weight="1.0">
+        <include android:id="@id/listitem3" layout="@layout/lcc_layout_listview_item_base" />
+        <include android:id="@id/top_third" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/lcc_common_list_ranking_places" />
+    </RelativeLayout>
+</LinearLayout>

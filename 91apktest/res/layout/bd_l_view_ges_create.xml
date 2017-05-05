@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bd_l_ges_ll_create_root" android:background="@color/bd_l_ges_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bd_l_ges_create_gap" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/bd_l_ges_setting_preview" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="6.0dip">
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_0" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_1" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_2" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="6.0dip">
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_3" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_4" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_5" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="6.0dip">
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_6" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_7" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+            <View android:id="@id/bd_l_ges_pwd_setting_pre_8" android:background="@android:color/transparent" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/bd_l_ges_create_gap1" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/bd_l_ges_pwd_create_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="40.0dip" android:text="@string/bd_l_ges_draw_lock_pattern" android:shadowColor="#b3000000" android:shadowRadius="1.0" />
+    <View android:id="@id/bd_l_ges_create_gap2" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_weight="1.0" />
+    <com.baidu.passwordlock.gesture.LockPatternView android:layout_gravity="center_horizontal" android:id="@id/bd_l_ges_pwd_create_lock_view" android:layout_width="288.0dip" android:layout_height="288.0dip" android:layout_marginTop="10.0dip" lockPatternview:lockPatternWidth="288.0dip" lockPatternview:lockPatternHeight="288.0dip" xmlns:lockPatternview="http://schemas.android.com/apk/res-auto" />
+    <View android:id="@id/bd_l_ges_create_gap3" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@drawable/bd_l_cha_text_white_selector" android:gravity="center" android:id="@id/bd_l_ges_reset_btn" android:background="@drawable/bd_l_cha_btn_blue_round_selector" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/bd_l_ges_cancel_btn_text" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:textColor="@drawable/bd_l_cha_text_white_selector" android:gravity="center" android:id="@id/bd_l_ges_ok_btn" android:background="@drawable/bd_l_cha_btn_blue_round_selector" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/bd_l_ges_continue_btn_text" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="right" android:id="@id/bd_l_ges_pwd_unlock_cancel_ll" android:paddingRight="@dimen/bd_l_numb_item_cancel_m_r_b_size" android:paddingBottom="@dimen/bd_l_numb_item_cancel_m_r_b_size" android:layout_width="80.0dip" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/bd_l_ges_pwd_unlock_cancel_tv" android:layout_width="80.0dip" android:layout_height="50.0dip" android:text="@string/bd_l_ges_cancel_btn_text" />
+    </RelativeLayout>
+</LinearLayout>

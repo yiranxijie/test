@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bd_l_cha_numb_item_btn_txt_size">26.0sp</dimen>
+    <dimen name="bd_l_cha_cancel_txt_size">16.0sp</dimen>
+    <dimen name="bd_l_cha_numb_item_tip_txt_size">18.0sp</dimen>
+    <dimen name="bd_l_numb_monitor_size_size">130.0dip</dimen>
+    <dimen name="bd_l_cha_numb_area_m_t_size">10.0dip</dimen>
+    <dimen name="bd_l_numb_item_number_btn_m_r_size">22.0dip</dimen>
+    <dimen name="bd_l_numb_item_number_first_btn_m_t_size">15.0dip</dimen>
+    <dimen name="bd_l_numb_item_cancel_m_r_b_size">12.0dip</dimen>
+    <dimen name="bd_l_cha_item_btn_m_size">20.0dip</dimen>
+    <dimen name="bd_l_cha_horizental_item_btn_m_t_size">10.0dip</dimen>
+    <dimen name="bd_l_cha_ly_h_size">45.0dip</dimen>
+    <dimen name="bd_l_ges_text_top_m_b_size">45.0dip</dimen>
+</resources>

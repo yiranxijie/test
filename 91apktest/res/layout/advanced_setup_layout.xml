@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/imv_sys_airplane_mode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imv_sys_wifi" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imv_sys_blue_tooth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/imv_sys_flash_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imv_sys_brightness" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imv_sys_ring_mode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_ring_virb" android:scaleType="centerInside" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

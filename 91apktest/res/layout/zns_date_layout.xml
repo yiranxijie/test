@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_big">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/time_hour_0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/time_hour_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ImageView android:id="@id/time_point" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" />
+            <ImageView android:id="@id/time_minute_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ImageView android:id="@id/time_minute_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="3.0dip" android:layout_toRightOf="@id/layout_time" android:layout_alignBottom="@id/layout_time">
+            <ImageView android:id="@id/img_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/txt_battery_lever" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="20%" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="60.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txt_lock_screen_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20:50" android:shadowColor="@color/black" android:shadowRadius="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <View android:id="@id/date_year_0" style="@style/DateSize" />
+        <View android:id="@id/date_year_1" style="@style/DateSize" />
+        <View android:id="@id/date_year_2" style="@style/DateSize" />
+        <View android:id="@id/date_year_3" style="@style/DateSize" />
+        <View android:layout_gravity="bottom" android:id="@id/date_point" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_margin="2.0dip" />
+        <View android:id="@id/date_month_0" style="@style/DateSize" />
+        <View android:id="@id/date_month_1" style="@style/DateSize" />
+        <View android:layout_gravity="bottom" android:id="@id/date_point_2" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_margin="2.0dip" />
+        <View android:id="@id/date_day_0" style="@style/DateSize" />
+        <View android:id="@id/date_day_1" style="@style/DateSize" />
+        <ImageView android:id="@id/week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txt_lock_screen_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="03/31" android:shadowColor="@color/black" android:shadowRadius="1.0" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txt_lock_screen_week" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monday" android:shadowColor="@color/black" android:shadowRadius="1.0" />
+</LinearLayout>

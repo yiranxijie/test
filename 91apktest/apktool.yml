@@ -1,0 +1,22 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: 91.apk
+compressionType: false
+doNotCompress:
+- apk
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '14'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.1
+versionInfo:
+  versionCode: '31022'
+  versionName: 3.10.2

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_dislodge_double_lock" android:key="settings_dislodge_double_lock" android:summary="@string/settings_dislodge_double_lock_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_lock_booster" android:key="settings_switch_lock_booster_393" android:summary="@string/settings_switch_lock_booster_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/setting_use_distance_sensor_for_wechat_text" android:key="settings_use_distance_sensor_for_wechat" android:summary="@string/setting_use_distance_sensor_for_wechat_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_cache_clean" android:key="settings_cache_clean" android:summary="@string/settings_cache_clean_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_home_more_close">
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/setting_one_key_lock" android:key="setting_one_key_lock" android:summary="@string/new_user_guide_setting_second_launcher_tips" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_overturn_lock" android:key="settings_switch_overturn_lock" android:summary="@string/settings_switch_overturn_lock_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="layoutManager" format="string" />
+    <attr name="spanCount" format="integer" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="stackFromEnd" format="boolean" />
+    <attr name="cardBackgroundColor" format="color" />
+    <attr name="cardCornerRadius" format="dimension" />
+    <attr name="cardElevation" format="dimension" />
+    <attr name="cardMaxElevation" format="dimension" />
+    <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardPreventCornerOverlap" format="boolean" />
+    <attr name="contentPadding" format="dimension" />
+    <attr name="contentPaddingLeft" format="dimension" />
+    <attr name="contentPaddingRight" format="dimension" />
+    <attr name="contentPaddingTop" format="dimension" />
+    <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="floating_edit_text_hint_scale" format="float" />
+    <attr name="floating_edit_text_color" format="color" />
+    <attr name="floating_edit_text_highlighted_color" format="color" />
+    <attr name="floating_edit_text_error_color" format="color" />
+    <attr name="floating_edit_text_underline_height" format="dimension" />
+    <attr name="floating_edit_text_underline_highlighted_height" format="dimension" />
+    <attr name="button_flat_animate" format="boolean" />
+    <attr name="lockPatternWidth" format="dimension" />
+    <attr name="lockPatternHeight" format="dimension" />
+    <attr name="ColorPickerHeight" format="dimension" />
+    <attr name="ColorPickerWidth" format="dimension" />
+    <attr name="loadingText" format="string" />
+    <attr name="adapterViewBackground" format="reference|color" />
+    <attr name="headerBackground" format="reference|color" />
+    <attr name="headerTextColor" format="color" />
+    <attr name="mode">
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+    </attr>
+    <attr name="animationDuration" format="integer" />
+    <attr name="position">
+        <enum name="top" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+    </attr>
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="linearFlying" format="boolean" />
+    <attr name="weight" format="fraction" />
+    <attr name="openedHandle" format="reference|color" />
+    <attr name="closedHandle" format="reference|color" />
+    <attr name="transitionDrawable" format="reference" />
+    <attr name="transitionDrawableLength" format="integer" />
+    <attr name="transitionTextColorUp" format="color" />
+    <attr name="transitionTextColorDown" format="color" />
+    <attr name="idleTimeout" format="integer" />
+    <attr name="decreaseButton" format="reference" />
+    <attr name="increaseButton" format="reference" />
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    <attr name="mhandle" format="reference" />
+    <attr name="mcontent" format="reference" />
+    <attr name="bottomOffset" format="dimension" />
+    <attr name="topOffset" format="dimension" />
+    <attr name="allowSingleTap" format="boolean" />
+    <attr name="animateOnClick" format="boolean" />
+</resources>

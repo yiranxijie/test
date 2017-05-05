@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/common_title_bg" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textSize="@dimen/myphone_title_text_size" android:textColor="@color/myphone_common_title_color1" android:gravity="center" android:id="@id/new_user_guide_setting_activity_title_text" android:layout_width="fill_parent" android:layout_height="@dimen/myphone_top_content" android:text="123" />
+        <LinearLayout android:gravity="center" android:id="@id/new_user_guide_setting_activity_title_image" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_menu_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/new_user_guide_setting_first" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/common_title_little_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/new_user_guide_setting_first_tips" />
+            <ImageView android:background="@drawable/prompt_preference_category" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <RelativeLayout android:id="@id/new_user_guide_setting_first_setting" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <TextView android:textSize="@dimen/setting_title_size" android:textColor="@color/common_text_color" android:gravity="center_vertical" android:id="@id/new_user_guide_setting_first_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/new_user_guide_setting_first_content" />
+                    <TextView android:textSize="@dimen/setting_summary_size" android:textColor="@color/common_little_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/new_user_guide_setting_first_summary" />
+                </LinearLayout>
+                <CheckBox android:gravity="center_vertical" android:id="@id/new_user_guide_setting_first_checkbox" android:focusable="false" android:clickable="false" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:button="@drawable/selector_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/new_user_guide_setting_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/new_user_guide_setting_first">
+            <ImageView android:background="@drawable/prompt_preference_category" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textColor="@color/common_title_little_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/new_user_guide_setting_second_tips" />
+            <ImageView android:background="@drawable/prompt_preference_category" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <RelativeLayout android:id="@id/new_user_guide_setting_second_setting" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <TextView android:textSize="@dimen/setting_title_size" android:textColor="@color/common_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/new_user_guide_setting_second_content" />
+                    <TextView android:textSize="@dimen/setting_summary_size" android:textColor="@color/common_little_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/new_user_guide_setting_second_summary" />
+                </LinearLayout>
+                <TextView android:gravity="center_vertical" android:id="@id/new_user_guide_setting_second_launcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/new_user_guide_setting_second_launcher_tips" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/setting_title_size" android:textColor="@android:color/white" android:id="@id/new_user_guide_setting_cancel" android:background="@drawable/common_btn_orange_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/new_user_guide_setting_cancel" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/setting_title_size" android:textColor="@android:color/white" android:id="@id/new_user_guide_setting_ok" android:background="@drawable/common_btn_orange_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/new_user_guide_setting_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

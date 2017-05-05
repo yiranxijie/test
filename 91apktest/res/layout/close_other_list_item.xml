@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_appIcon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" />
+    <TextView android:textSize="@dimen/setting_title_size" android:textColor="@color/common_text_color" android:gravity="center_vertical" android:id="@id/close_appName" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_marginRight="20.0dip" android:text="@string/settings_dislodge_double_lock_close_other_lock" android:drawableRight="@drawable/pre_more_button" />
+</LinearLayout>

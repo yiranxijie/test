@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.5999756dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.5999756dip">
+        <Button android:id="@id/pop_select_btn_ok" android:text="确定" style="@style/dateButton" />
+        <Button android:textColor="@android:color/black" android:id="@id/pop_select_btn_cancel" android:background="@drawable/weather_btn_while_selector" android:layout_marginLeft="5.0dip" android:text="取消" style="@style/dateButton" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff717171" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="6.0dip" android:text="范围 0.5~24 小时" />
+    <thirdParty.WheelView.WheelView android:layout_gravity="center_horizontal" android:id="@id/single_select_ww_list" android:layout_width="102.0dip" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

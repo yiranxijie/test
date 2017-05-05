@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/img_locker_electrical_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txt_locker_electrical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="29%" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_locker_electrical" android:background="@drawable/locker_electrial_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

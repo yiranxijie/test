@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/presonal_compaign_mainview_header" android:layout_width="fill_parent" android:layout_height="115.0dip">
+        <com.nd.weather.widget.UI.banner.CompaignSlidingView android:id="@id/presonal_compaign_mainview_header_slidingview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.nd.hilauncherdev.framework.view.commonsliding.CommonLightbar android:gravity="center_vertical" android:id="@id/lightbar" android:background="@drawable/launcher_menu_presonal_compaign_rightbar_bg" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

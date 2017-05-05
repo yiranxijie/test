@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.screenlock.core.lock.lockview.upslide.CustomViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <View android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.baidu.screenlock.core.lock.lockview.upslide.IosLockDateView android:id="@id/date" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    </LinearLayout>
+</FrameLayout>

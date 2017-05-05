@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/myphone_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/searchLayout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:textSize="18.0sp" android:textColor="#ff545454" android:textColorHint="#ffc6c6c6" android:layout_gravity="center_vertical" android:id="@id/txtSearchInput" android:background="@drawable/navigation_search_edittext_bg" android:paddingLeft="10.0dip" android:paddingRight="88.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/lock_main_title_edittext_hint" android:inputType="text" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/btnCleanSearch" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginRight="54.0dip" android:src="@drawable/navigation_search_clear_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:id="@id/search" android:background="@drawable/navigation_search_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/navigation_search_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.baidu.screenlock.search.ThemeShopV6ClassifySearchTabView android:id="@id/tabview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/searchLayout" />
+</RelativeLayout>

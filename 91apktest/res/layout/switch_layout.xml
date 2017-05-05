@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imv_sys_wifi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_wifi_0" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imv_sys_mobile_network" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_3g_0" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imv_sys_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_ring_silent" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imv_sys_luminance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_brightness_0" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imv_sys_airplane_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_airplane_0" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <ImageView android:id="@id/imv_sys_flash_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_handlight_0" android:scaleType="centerInside" android:layout_weight="1.0" />
+</LinearLayout>

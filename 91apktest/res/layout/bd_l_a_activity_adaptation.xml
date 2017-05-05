@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/title" android:background="@drawable/bd_l_a_comm_title_bg" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textSize="@dimen/bd_l_a_title_text_size" android:textColor="@color/bd_l_a_title_text_color" android:gravity="center" android:id="@id/bd_l_a_tv_top_title" android:layout_width="fill_parent" android:layout_height="@dimen/bd_l_a_title_size" android:text="@string/bd_l_a_adapte_title_text" />
+        <LinearLayout android:gravity="center" android:id="@id/bd_l_a_ll_top_back" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bd_l_a_back_btn_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bd_l_a_ll_ps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="40.0dip" android:layout_below="@id/title">
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/bd_l_a_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bd_l_a_miui_settings_title_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/bd_l_a_iv_ps" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/bd_l_a_rl_bottom" android:layout_below="@id/bd_l_a_ll_ps" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/bd_l_a_rl_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/bd_l_a_rl_title1" android:background="@drawable/bd_l_a_no_btn_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff34a2a2" android:gravity="center_vertical" android:id="@id/bd_l_a_tv_title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/bd_l_a_settings_float_window_text" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/bd_l_a_iv_title1" android:background="@drawable/bd_l_a_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/bd_l_a_rl_title2" android:background="@drawable/bd_l_a_no_btn_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff34a2a2" android:gravity="center_vertical" android:id="@id/bd_l_a_tv_title2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/bd_l_a_settings_laun_auto_text" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/bd_l_a_iv_title2" android:background="@drawable/bd_l_a_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@id/bd_l_a_rl_title3" android:background="@drawable/bd_l_a_no_btn_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff34a2a2" android:gravity="center_vertical" android:id="@id/bd_l_a_tv_title3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/bd_l_a_settings_close_sys_locker" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/bd_l_a_iv_title3" android:background="@drawable/bd_l_a_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

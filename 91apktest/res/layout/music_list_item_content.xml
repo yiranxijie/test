@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:gravity="right" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="@string/music_list_item_content_name" />
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:id="@id/music_list_item_content_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:gravity="right" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="@string/music_list_item_content_duration" />
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:id="@id/music_list_item_content_duration" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:gravity="right" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="@string/music_list_item_content_size" />
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:id="@id/music_list_item_content_size" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:gravity="right" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="@string/music_list_item_content_path" />
+        <TextView android:textSize="@dimen/myphone_item_text_size" android:textColor="@android:color/black" android:id="@id/music_list_item_content_path" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

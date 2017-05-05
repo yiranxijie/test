@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtendXml>
+  <Node>
+    <!--未接电话-->
+    <ScreenNode type="0" x="#unlockercall.ulmove_x" y="#unlockercall.ulmove_y+#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200
+" visible="(#call.call_missed_count>0)*(1-(#unlockercall.ullife^4+#unlockercall.ullife^5+#unlockercall.ullife^2+#unlockercall.ullife^6))">
+      <Image x="#call_bg_x?295" y="#call_bg_y?0" scaleY="1" scaleX="18" src="bar.png">
+      </Image>
+      <TextValue x="#call_text_x?221" y="#call_text_y?45" size="#call_text_size?32" colorR="#call_text_color_r?255" colorG="#call_text_color_g?255" colorB="255#call_text_color_b?255" alpha="#call_text_color_a?255" format="%.0f个未接来电" parse="#call.call_missed_count">
+      </TextValue>
+      <TextValue x="#call_time_x?446" y="#call_time_y?45" size="#call_time_size?26" colorR="#call_time_color_r?255" colorG="#call_time_color_g?255" colorB="#call_time_color_b?255" alpha="#call_time_color_a?255" format="%s" parse="#call.call_untime">
+      </TextValue>
+      <Image x="53" y="45" src="call.png">
+      </Image>
+      <Image x="53" y="45" src="box.png">
+      </Image>
+    </ScreenNode>    
+
+    <Unlocker name="unlockercall" enable="#call.call_missed_count>0" touchmutex="1">
+      <StartPoint x="#call_basenode_x?102" y="#call_basenode_y?650" width="516" height="100">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+      </StartPoint>
+      <EndPoint x="#call_basenode_x?102+644" y="#call_basenode_y?650" width="1" height="100" name="extarea1">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <Intent action="102"/>
+      </EndPoint>
+      <EndPoint x="#call_basenode_x?102-644" y="#call_basenode_y?650" width="516" height="100" name="extarea2">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <!--<Intent action="11" offsetx="-720" offsety="0"/>-->
+        <Intent action="11" />
+        <Path x="0" y="0" offsetx="-720" offsety="0">
+          <Position x="0" y="0"/>
+          <Position x="1440" y="0" />
+        </Path>
+      </EndPoint>
+      <EndPoint x="18000" y="18000" width="516" height="100">
+        <Intent action="10000" />
+        <FailedState>
+          <ScreenNode type="0" x="#call_basenode_x?102" y="#call_basenode_y?650">
+            <Image x="#call_bg_x?295" y="#call_bg_y?0" scaleY="1" scaleX="18" src="bar.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <TextValue x="#call_text_x?221" y="#call_text_y?45" size="#call_text_size?32" colorR="#call_text_color_r?255" colorG="#call_text_color_g?255" colorB="255#call_text_color_b?255" alpha="#call_text_color_a?255" format="%.0f个未接来电" parse="#call.call_missed_count">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <TextValue x="#call_time_x?446" y="#call_time_y?45" size="#call_time_size?26" colorR="#call_time_color_r?255" colorG="#call_time_color_g?255" colorB="#call_time_color_b?255" alpha="#call_time_color_a?255" format="%s" parse="#call.call_untime">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <Image x="53" y="45" src="call.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <Image x="53" y="45" src="box.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+          </ScreenNode>
+        </FailedState>
+      </EndPoint>
+    </Unlocker>
+
+    <!--未读短信-->
+    <ScreenNode type="0" x="#unlockersms1.ulmove_x*((1-#call.call_missed_count>0)*(#sms.sms_unread_count>0))+#unlockersms2.ulmove_x*((#call.call_missed_count>0)*(#sms.sms_unread_count>0))" y="621-105*(#call.call_missed_count>0)+#unlocker.ulmove_y+#ulcamera.ulmove_y+200+200
+" visible="(#sms.sms_unread_count>0)*((1-(#unlockersms1.ullife^4+#unlockersms1.ullife^5+#unlockersms1.ullife^2+#unlockersms1.ullife^6+#unlockersms2.ullife^4+#unlockersms2.ullife^2+#unlockersms2.ullife^6+#unlockersms2.ullife^5))">
+      <Image x="#sms_bg_x?295" y="#sms_bg_y?0" scaleY="1" scaleX="18" src="bar.png">
+      </Image>
+      <TextValue x="#sms_text_x?221" y="#sms_text_y?45" size="#sms_text_size?32" colorR="#sms_text_color_r?255" colorG="#sms_text_color_g?255" colorB="#sms_text_color_b?255" alpha="#sms_text_color_a?255" format="%.0f个未读短信" parse="#sms.sms_unread_count">
+      </TextValue>
+      <TextValue x="#sms_time_x?446" y="#sms_time_y?45" size="#sms_time_size?26" colorR="#sms_time_color_r?255" colorG="#sms_time_color_g?255" colorB="#sms_time_color_b?255" alpha="#sms_time_color_a?255" format="%s" parse="#sms.sms_untime">
+      </TextValue>
+      <Image x="53" y="45" src="sms.png">
+      </Image>
+      <Image x="53" y="45" src="box.png">
+      </Image>
+    </ScreenNode>
+
+    <!--只有短信-->
+    <Unlocker name="unlockersms1" enable="(1-#call.call_missed_count>0)*(#sms.sms_unread_count>0)" touchmutex="1">
+      <StartPoint x="#sms_only_basenode_x?102" y="#sms_only_basenode_y?621" width="516" height="100">
+      </StartPoint>
+      <EndPoint x="#sms_only_basenode_x?102+644" y="#sms_only_basenode_y?621" width="1" height="100" name="extarea3">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <Intent action="103" />
+      </EndPoint>
+      <EndPoint x="#sms_only_basenode_x?102-644" y="#sms_only_basenode_y?621" width="516" height="100" name="extarea4">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <Intent action="12" />
+        <Path x="0" y="0" offsetx="-720" offsety="0">
+          <Position x="0" y="0"/>
+          <Position x="1440" y="0" />
+        </Path>
+      </EndPoint>
+      <EndPoint x="18000" y="18000" width="516" height="100">
+        <Intent action="10000" />
+        <FailedState>
+          <ScreenNode type="0" x="#sms_only_basenode_x?102" y="#sms_only_basenode_y?621">
+            <Image x="#sms_bg_x?295" y="#sms_bg_y?0" scaleY="1" scaleX="18" src="bar.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <TextValue x="#sms_text_x?221" y="#sms_text_y?45" size="#sms_text_size?32" colorR="#sms_text_color_r?255" colorG="#sms_text_color_g?255" colorB="#sms_text_color_b?255" alpha="#sms_text_color_a?255" format="%.0f个未读短信" parse="#sms.sms_unread_count">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <TextValue x="#sms_time_x?446" y="#sms_time_y?45" size="#sms_time_size?26" colorR="#sms_time_color_r?255" colorG="#sms_time_color_g?255" colorB="#sms_time_color_b?255" alpha="#sms_time_color_a?255" format="%s" parse="#sms.sms_untime">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <Image x="53" y="45" src="sms.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <Image x="53" y="45" src="box.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+          </ScreenNode>
+        </FailedState>
+      </EndPoint>
+    </Unlocker>
+
+    <!--既有电话又有短信-->
+    <Unlocker name="unlockersms2" enable="(#call.call_missed_count>0)*(#sms.sms_unread_count>0)" touchmutex="1">
+      <StartPoint x="#sms_and_call_basenode_x?102" y="#sms_and_call_basenode_y?516" width="516" height="102">
+      </StartPoint>
+      <EndPoint x="#sms_and_call_basenode_x?102+644" y="#sms_and_call_basenode_y?516" width="1" height="102" name="extarea5">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <Intent action="103" />
+      </EndPoint>
+      <EndPoint x="#sms_and_call_basenode_x?102-644" y="#sms_and_call_basenode_y?516" width="516" height="102" name="extarea6">
+        <RebackSpeed type="0" speed="2000"></RebackSpeed>
+        <Intent action="12" />
+        <Path x="0" y="0" offsetx="-720" offsety="0">
+          <Position x="0" y="0"/>
+          <Position x="1440" y="0" />
+        </Path>
+      </EndPoint>
+      <EndPoint x="18000" y="18000" width="516" height="100">
+        <Intent action="10000" />
+        <FailedState>
+          <ScreenNode type="0" x="#sms_and_call_basenode_x?102" y="#sms_and_call_basenode_y?516">
+            <Image x="#sms_bg_x?295" y="#sms_bg_y?0" scaleY="1" scaleX="18" src="bar.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <TextValue x="#sms_text_x?221" y="#sms_text_y?45" size="#sms_text_size?32" colorR="#sms_text_color_r?255" colorG="#sms_text_color_g?255" colorB="#sms_text_color_b?255" alpha="#sms_text_color_a?255" format="%.0f个未读短信" parse="#sms.sms_unread_count">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <TextValue x="#sms_time_x?446" y="#sms_time_y?45" size="#sms_time_size?26" colorR="#sms_time_color_r?255" colorG="#sms_time_color_g?255" colorB="#sms_time_color_b?255" alpha="#sms_time_color_a?255" format="%s" parse="#sms.sms_untime">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </TextValue>
+            <Image x="53" y="45" src="sms.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+            <Image x="53" y="45" src="box.png">
+              <PositionAnimation playcnt ="1">
+                <Position x="0"    y="0" time="0"/>
+                <Position x="30"    y="0" time="200"/>
+                <Position x="0"    y="0" time="400"/>
+              </PositionAnimation>
+            </Image>
+          </ScreenNode>
+        </FailedState>
+      </EndPoint>
+    </Unlocker>
+
+    <Call name="call" alarm="1000">
+      <!--来电状态 alarm="3"未接大于等于3个 预警动画-->
+      <NoState>
+        <!--无未接来电-->
+      </NoState>
+      <NormalState>
+        <!--有未接来电，未超过预警-->
+      </NormalState>
+      <AlarmState>
+        <!--有未接来电，超过预警-->
+      </AlarmState>
+    </Call>
+
+    <Sms name="sms" alarm="1000">
+      <!--短信状态 alarm="100"未读大于等于100个 预警动画-->
+      <NoState>
+        <!--无未读短信-->
+      </NoState>
+      <NormalState>
+        <!--有未读短信，未超过预警-->
+      </NormalState>
+      <AlarmState>
+        <!--有未读短信，超过预警-->
+      </AlarmState>
+    </Sms>
+  </Node>
+</ExtendXml>

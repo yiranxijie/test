@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/lcc_theme_shop_v6_list_pre_image_bg_2" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/theme_shop_v6_ranking_img_margin_horizontalSpacing">
+            <ImageView android:id="@id/localPreview" android:layout_width="@dimen/theme_shop_v6_recomment_new_img_width" android:layout_height="@dimen/theme_shop_v6_recomment_new_img_height" android:src="@drawable/lcc_no_find_small2" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/theme_shop_v6_recomment_text_size_12" android:textColor="#ff535353" android:ellipsize="end" android:id="@id/localTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                <TextView android:textSize="@dimen/theme_shop_v6_recomment_text_size_12" android:textColor="#ff7b7b7b" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/localDesc" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:maxLines="2" android:lineSpacingExtra="3.0dip" />
+                <RelativeLayout android:gravity="center" android:id="@id/localPriceLayout" android:background="#ffffaa33" android:layout_width="120.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/localPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_shop_v6_func_theme_tab_ranking_free" android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="67.0dip" android:layout_height="77.0dip" android:src="@drawable/lcc_theme_shop_v6_ranking_yellow_bj" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/lcc_theme_shop_v6_ranking_first" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

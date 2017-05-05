@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="title_text">false</item>
+    <item type="id" name="list_view">false</item>
+    <item type="id" name="switch_city">false</item>
+    <item type="id" name="city_name">false</item>
+    <item type="id" name="refresh_weather">false</item>
+    <item type="id" name="publish_text">false</item>
+    <item type="id" name="weather_info_layout">false</item>
+    <item type="id" name="current_date">false</item>
+    <item type="id" name="weather_desp">false</item>
+    <item type="id" name="temp1">false</item>
+    <item type="id" name="temp2">false</item>
+    <item type="id" name="action_settings">false</item>
+</resources>

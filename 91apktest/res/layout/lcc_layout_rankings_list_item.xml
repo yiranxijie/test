@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rankings_list_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/lcc_theme_shop_v6_ranking_grid_items_one" />
+    <include android:id="@id/rankings_list_three" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/lcc_theme_shop_v6_ranking_grid_items_three" />
+</LinearLayout>

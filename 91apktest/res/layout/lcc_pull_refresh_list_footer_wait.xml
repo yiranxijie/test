@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffece9d8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/market_wait" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ProgressBar android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallTitle" />
+        <TextView android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/market_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载..." />
+    </LinearLayout>
+</FrameLayout>

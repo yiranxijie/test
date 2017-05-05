@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/contian_music" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/playtime" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/duration" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/latestBtn" android:background="@drawable/btn_view_music_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_biger" android:layout_marginRight="@dimen/padding_biger" android:src="@drawable/btn_light_selector" />
+                <ImageButton android:id="@id/playBtn" android:background="@drawable/btn_view_music_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_biger" android:layout_marginRight="@dimen/padding_biger" android:src="@drawable/btn_light_selector" />
+                <ImageButton android:id="@id/nextBtn" android:background="@drawable/btn_view_music_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_biger" android:layout_marginRight="@dimen/padding_biger" android:src="@drawable/btn_light_selector" />
+            </LinearLayout>
+            <LinearLayout android:paddingTop="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/btn_mode" android:background="@drawable/btn_view_music_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_light_selector" android:scaleType="fitCenter" />
+                <ImageButton android:id="@id/btn_list" android:background="@drawable/bnt_music_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_music_biger" android:src="@drawable/btn_light_selector" android:scaleType="fitCenter" />
+                <ImageButton android:id="@id/btn_bluetooth" android:background="@drawable/bnt_music_bluetooth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_music_biger" android:src="@drawable/btn_light_selector" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:paddingLeft="@dimen/padding_biger" android:paddingTop="@dimen/padding_normal" android:paddingRight="@dimen/padding_biger" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:id="@id/view_progress" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/music_process" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <SeekBar android:id="@id/seekbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/seekbar_img" android:thumb="@drawable/media_player_progress_button" />
+    </FrameLayout>
+</FrameLayout>

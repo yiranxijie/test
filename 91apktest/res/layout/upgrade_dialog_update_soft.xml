@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/soft_update_lt" android:layout_width="300.0dip" android:layout_height="455.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_layout" android:background="@drawable/upgrade_app_choose_top_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ProgressBar01" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon" android:scaleType="fitCenter" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff1e83de" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/soft_update_application_name" android:layout_toRightOf="@id/ProgressBar01" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bottom_layout" android:background="@drawable/upgrade_app_choose_bottom_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_layout">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+            <Button android:textColor="@color/upgrade_app_choose_btn_color" android:gravity="center" android:id="@id/btn_update" android:background="@drawable/upgrade_app_choose_btn" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/soft_update_official_website" android:layout_weight="1.0" />
+            <ImageView android:background="@drawable/upgrade_app_choose_vertical_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <Button android:textColor="@color/upgrade_app_choose_btn_color" android:gravity="center" android:id="@id/btn_market" android:background="@drawable/upgrade_app_choose_btn" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/soft_update_google_market" android:layout_weight="1.0" />
+            <ImageView android:background="@drawable/upgrade_app_choose_vertical_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <Button android:textColor="@color/upgrade_app_choose_btn_color" android:gravity="center" android:id="@id/btn_iknow" android:background="@drawable/upgrade_app_choose_btn" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/soft_update_i_know" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/checkbox_not_alert_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_layout">
+            <CheckBox android:textSize="16.0sp" android:textColor="#ff757675" android:id="@id/checkbox_not_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/soft_update_checkbox_not_alert" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/checkbox_not_alert_layout">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/update_content" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="5.0dip" />
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

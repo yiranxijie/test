@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_char_icon_pwd_set_text" android:key="settings_char_icon_pwd_set" android:summary="@string/settings_char_icon_pwd_set_text_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_bak" android:key="settings_safe_password_bak" android:summary="@string/settings_safe_password_bak_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_force_unlock" android:key="settings_safe_force_unlock" android:summary="@string/settings_safe_force_unlock_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_gesture_line" android:key="settings_safe_password_gesture_line" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_full_screen" android:key="settings_switch_full_screen" android:summary="@string/settings_switch_full_screen_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_anim_screen_on" android:key="settings_anim_screen_on" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+</PreferenceScreen>

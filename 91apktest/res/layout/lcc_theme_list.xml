@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/loadingmid" layout="@layout/lcc_common_loading_style_mid" />
+    <com.baidu.screenlock.core.common.widget.NetErrorAndSettingView android:id="@id/neterror_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.screenlock.core.common.widget.NetNoDataAndSettingView android:id="@id/nodata_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideInset" android:gravity="center" android:id="@id/theme_shop_theme_list_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" android:listSelector="@drawable/theme_shop_v6_transparent" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:divider="@drawable/theme_shop_v6_transparent" android:dividerHeight="7.0dip" android:layout_weight="1.0" />
+        <include layout="@layout/lcc_common_loading_style_bottom" />
+    </LinearLayout>
+</LinearLayout>

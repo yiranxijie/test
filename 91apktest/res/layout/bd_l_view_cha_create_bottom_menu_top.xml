@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/cha_password_bottom_next" android:background="#ff7179db" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bd_l_cha_password_create_step_1_notice" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cha_password_ll_step_confirm" android:background="@drawable/bd_l_cha_menu_shadow" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="#ff9f9f9f" android:gravity="center" android:id="@id/cha_password_step_reset" android:background="@drawable/bd_l_cha_menu_reset_btn_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="5.0dip" android:text="@string/bd_l_cha_password_create_step_1_reset" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@drawable/bd_l_cha_menu_next_step_text_selector" android:gravity="center" android:id="@id/cha_password_step_first_ok" android:background="@drawable/bd_l_cha_menu_next_step_btn_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/bd_l_cha_password_create_step_1_finish" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

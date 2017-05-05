@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_l_color_pikcer_large_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bd_l_bg_white_round_selector" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/bd_l_color_pikcer_large_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="选择颜色" android:layout_centerHorizontal="true" />
+        <GridView android:gravity="center" android:id="@id/bd_l_color_picker_large_top" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="6" android:layout_above="@id/bd_l_color_picker_large_bottom" android:layout_below="@id/bd_l_color_pikcer_large_title" />
+        <com.baidu.passwordlock.view.ColorPickerView android:id="@id/bd_l_color_picker_large_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pwd="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bd_l_color_picker_lefe" android:background="@drawable/bd_l_cha_white_round_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true">
+        <View android:id="@id/bd_l_color_picker_preview_left" android:background="@drawable/bd_l_cha_white_round_selector" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bd_l_color_picker_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bd_l_color_picker_lefe" android:layout_centerVertical="true">
+        <com.baidu.passwordlock.view.ColorPickerSeekbarView android:id="@id/cha_color_picker_seekbar" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_centerVertical="true" pwd:ColorPickerHeight="8.0dip" />
+        <ImageView android:id="@id/bd_l_color_picker_index" android:background="@drawable/bd_l_seek_thumb_normal" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_dislodge_double_lock_system" android:key="settings_dislodge_double_lock_system" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_dislodge_double_lock_close_other_lock" android:key="settings_dislodge_double_lock_close_other_lock" android:summary="@string/settings_dislodge_double_lock_close_other_lock_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+</PreferenceScreen>

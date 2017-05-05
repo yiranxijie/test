@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/common_title_bg" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lock_main_title" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="17.0sp" android:textColor="#ff8b86dd" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:text="@string/app_name" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/lock_main_setting" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:src="@drawable/common_setting" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/lock_main_search" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="19.0dip" android:src="@drawable/common_search" android:layout_toLeftOf="@id/lock_main_setting" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lock_main_title_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/lock_main_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:src="@drawable/common_menu_selector" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center" android:id="@id/lock_main_search_btn" android:background="@drawable/common_btn_blue" android:layout_width="41.0dip" android:layout_height="31.0dip" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/navigation_search_image" />
+        </LinearLayout>
+        <EditText android:textColorHint="#ffc6c6c6" android:id="@id/lock_main_search_edittext" android:background="@drawable/navigation_search_edittext_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="13.0dip" android:hint="@string/lock_main_title_edittext_hint" android:singleLine="true" android:layout_toLeftOf="@id/lock_main_search_btn" android:layout_toRightOf="@id/lock_main_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

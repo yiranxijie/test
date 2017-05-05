@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_open_zns" android:key="settings_open_zns" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/settings_follow_launcher_change_skin" android:key="settings_follow_launcher_change_skin" android:summary="@string/settings_follow_launcher_change_skin_pandahome_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_launcherv6_lock_style" android:key="settings_launcherv6_lock_style" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_change_lock_wallpaper" android:key="settings_change_lock_wallpaper" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_lock_tone" android:key="lock_tone" android:summary="@string/settings_default_clear_lock_tone" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <CheckBoxPreference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_safe_setting" android:key="settings_launcherv6_safe_setting" android:widgetLayout="@layout/preferences_checkbox_extendable" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout_launcherv6" android:title="@string/settings_start_system_password" android:key="settings_start_system_password" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout_launcherv6" android:title="@string/settings_safe" android:key="settings_safe" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_home_more" android:key="settings_home_more" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+</PreferenceScreen>

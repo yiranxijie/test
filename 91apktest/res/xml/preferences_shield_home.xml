@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_shield_home_key_clean_category">
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_shield_home_key_clean_default_launcher" android:key="settings_shield_home_key_clean_default_launcher" android:summary="@string/settings_shield_home_key_summary" android:widgetLayout="@layout/preferences_checkbox" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_shield_home_key_chose_category">
+        <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_shield_home_key_chose_default_launcher" android:key="settings_shield_home_key_chose_default_launcher" android:summary="@string/settings_shield_home_key_chose_default_launcher_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+</PreferenceScreen>

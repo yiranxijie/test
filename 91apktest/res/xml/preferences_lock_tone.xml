@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_clear_lock_tone" android:key="clear_lock_tone" android:summary="@string/settings_default_clear_lock_tone" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_vibration" android:key="settings_switch_vibration" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_shield_volume_key" android:key="settings_switch_shield_volume_key" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_offscreen_sound" android:key="settings_switch_offscreen_sound" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_switch_theme_sound" android:key="settings_switch_theme_sound" android:summary="@string/settings_switch_theme_sound_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_sound_night_mode" android:key="settings_sound_night_mode" android:summary="@string/settings_sound_night_mode_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+</PreferenceScreen>

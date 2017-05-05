@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_lock_score" android:key="settings_lock_score" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_version_update" android:key="settings_version_update" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+    <Preference android:layout="@layout/preference_setting_shield_home_layout" android:title="@string/settings_connection_us" android:key="settings_connection_us" android:widgetLayout="@layout/preferences_listpreferences_more_btn" />
+</PreferenceScreen>

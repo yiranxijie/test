@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/common_title_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/myphone_title_text_size" android:textColor="@color/myphone_common_title_color1" android:gravity="center" android:id="@id/activity_title_text" android:layout_width="fill_parent" android:layout_height="@dimen/myphone_top_content" android:text="123" />
+        <LinearLayout android:gravity="center" android:id="@id/activity_title_image" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_menu_selector" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="42.0dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/ios7_bilayer_lock_iphone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ios7_bilayer_lock_preview1" android:layout_width="150.0dip" android:layout_height="wrap_content" android:src="@drawable/ios7_bilayer_lock_preview1" android:scaleType="fitCenter" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/ios7_bilayer_lock_preview1">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/ios7_bilayer_lock_preview1_text" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ios7_bilayer_lock_preview1_summary" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <CheckBox android:id="@id/ios7_bilayer_lock_iphone_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:button="@drawable/selector_radio_checkbox" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/ios7_bilayer_lock_shortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ios7_bilayer_lock_preview2" android:layout_width="150.0dip" android:layout_height="wrap_content" android:src="@drawable/ios7_bilayer_lock_preview2" android:scaleType="fitCenter" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/ios7_bilayer_lock_preview2">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/ios7_bilayer_lock_preview2_text" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ios7_bilayer_lock_preview2_summary" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <CheckBox android:id="@id/ios7_bilayer_lock_shortcut_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:button="@drawable/selector_radio_checkbox" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/ok_btn" android:background="@drawable/common_btn_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/ios7_bilayer_lock_btn_text" />
+    </LinearLayout>
+</RelativeLayout>

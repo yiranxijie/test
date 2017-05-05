@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/white" android:id="@id/nowWeatherWindPower" android:background="@drawable/weather_shape_wind_power_bg" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_temp_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_above="@id/weather_city_zhishu_layout" android:layout_below="@id/nowWeatherWindPower">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rl_temp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/nowWeathImageId" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/nowWeathTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/now_weather_info" style="@style/shadow_gray" />
+            <TextView android:textSize="@dimen/tempsize" android:textColor="@android:color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/nowWeathTempTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/now_weather_info" style="@style/shadow_gray" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/tempText_layout" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tempTextId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="      " android:singleLine="true" android:layout_centerInParent="true" style="@style/weather_temp_txt_style" />
+            <TextView android:gravity="center" android:id="@id/tempIconId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="°" android:layout_toRightOf="@id/tempTextId" style="@style/weather_temp_txt_style" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/weather_city_zhishu_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:baselineAligned="false">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/weather_wind_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/weather_exponent_style" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/weather_humidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/weather_exponent_style" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/weather_air_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/weather_exponent_style" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/split" android:background="#86ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/day_weather_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/weatherOne_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/weatherOneId" style="@style/more_weather_text_style" />
+                <ImageView android:id="@id/imgOne" style="@style/day_weather_image_style" />
+                <TextView android:id="@id/weatherOneTemp" style="@style/more_weather_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/weatherTwo_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/weatherTwoId" style="@style/more_weather_text_style" />
+                <ImageView android:id="@id/imgTwo" style="@style/day_weather_image_style" />
+                <TextView android:id="@id/weatherTwoTemp" style="@style/more_weather_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/weatherThree_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/weatherThreeId" style="@style/more_weather_text_style" />
+                <ImageView android:id="@id/imgThree" style="@style/day_weather_image_style" />
+                <TextView android:id="@id/weatherThreeTemp" style="@style/more_weather_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

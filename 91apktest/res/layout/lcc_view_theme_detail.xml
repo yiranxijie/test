@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/themePreviewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/lcc_theme_detail_activity_preview" />
+            <RelativeLayout android:background="@color/theme_shop_v6_detail_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/theme_shop_theme_detail_author_ly" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="41.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/theme_shop_theme_detail_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ratingBarLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/theme_shop_theme_detail_author_ly" android:layout_alignParentLeft="true">
+                    <RatingBar android:id="@id/theme_shop_theme_detail_ratingBar" android:clickable="false" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" style="@style/commentRatingBarLittle" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff707070" android:layout_gravity="center_vertical" android:id="@id/theme_shop_theme_detail_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/detailLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/ratingBarLayout">
+                    <TextView android:textSize="16.0sp" android:typeface="monospace" android:textStyle="bold" android:textColor="#ff333333" android:autoLink="web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_shop_theme_describe_tip" android:singleLine="false" />
+                    <TextView android:typeface="monospace" android:textColor="#ff707070" android:gravity="left" android:autoLink="web" android:id="@id/theme_shop_theme_intro" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/theme_shop_detail_recommend_apps" android:background="@color/theme_shop_v6_detail_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="#ff333333" android:gravity="left" android:autoLink="web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_shop_detail_recommend_apps_title" android:singleLine="false" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_shop_detail_recommend_app1" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/theme_shop_detail_recommend_app1_imageview" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/lcc_no_find_small2" />
+                        <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="#ff545454" android:ellipsize="end" android:gravity="left" android:autoLink="web" android:id="@id/theme_shop_detail_recommend_app1_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_shop_main_title" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_shop_detail_recommend_app2" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <ImageView android:id="@id/theme_shop_detail_recommend_app2_imageview" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/lcc_no_find_small2" />
+                        <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="#ff545454" android:ellipsize="end" android:gravity="left" android:autoLink="web" android:id="@id/theme_shop_detail_recommend_app2_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_shop_main_title" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_shop_detail_recommend_app3" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <ImageView android:id="@id/theme_shop_detail_recommend_app3_imageview" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/lcc_no_find_small2" />
+                        <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="#ff545454" android:ellipsize="end" android:gravity="left" android:autoLink="web" android:id="@id/theme_shop_detail_recommend_app3_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_shop_main_title" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

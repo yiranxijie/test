@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.com.nd.s">
+    <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.DISABLE_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission."/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.baidu.screenlock.lockcore.application.LockApplication" android:process="cn.com.nd.s">
+        <meta-data android:name="ONE_KEY_LOCK_VERSION_CODE" android:value="2"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="cn.com.nd.s.ThemeListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.com.nd.zns.action.SETTING"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.baidu.screenlock.lockcore.activity.LockMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.baidu.screenlock.lockcore.manager.GuidDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.theme.OnlineThemePreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.core.theme.icon.ThemeIconActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.lockcore.activity.ModuleDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.baidu.screenlock.search.ThemeShopV6ClassifySearchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.theme.LockThemeLocalDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.lock.preview.SHOW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.theme.pandatheme.ThemeShopV2ThemeDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.baidu.screenlock.lockcore.activity.LockScreenActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.hilauncher.pandalock" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.baidu.screenlock.lockcore.activity.mini.LockMiniActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.hilauncher.pandalock" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.baidu.screenlock.core.lock.activity.ShortCutActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.hilauncher.pandalock" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.baidu.screenlock.floatlock.activity.FloatLockScreenActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.hilauncher.pandalock" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.baidu.screenlock.settings.appselect.AppSelectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.baidu.screenlock.lockcore.lockview.CommonLockActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.hilauncher.pandalock" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.baidu.screenlock.floatlock.service.SaveHomeWallPaperService" android:process=":remote"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.CharIconPwdSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.CharacterLockCreateActivity" android:process=":charcreate" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.baidu.screenlock.core.common.cropimage.CropImageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.core.theme.icon.ThemeIconActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:name="com.baidu.screenlock.floatlock.activity.ShareThemeReceiveActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.zns"/>
+                <data android:pathPattern=".*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zns.*"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.hilock"/>
+                <data android:pathPattern=".*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.hilock.*"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/hilock"/>
+                <data android:mimeType="*/zip+hilock"/>
+                <data android:mimeType="application/hilock"/>
+                <data android:mimeType="application/zip+hilock"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.screenlock.wallpaper.loader.LockWallPaperActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.passwordlock.theme.WallPaperSelectActivity" android:process=":wallpaperselect" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.CharLockSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <service android:name="com.baidu.screenlock.floatlock.service.SettingsConfigManagerService"/>
+        <service android:name="com.baidu.screenlock.floatlock.service.ThemeApplyService"/>
+        <activity android:excludeFromRecents="true" android:name="com.baidu.screenlock.lockcore.activity.LockScreenStart" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.baidu.screenlock.lockcore.service.LockService"/>
+        <receiver android:exported="true" android:name="com.baidu.screenlock.lockcore.receiver.BootReceiver" android:priority="10000">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="action.restart.UpdateService"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.baidu.screenlock.lockcore.manager.NetPlanWebActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.baidu.screenlock.settings.HomeSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.ToolBoxSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.NotificationSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.LockViewSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.PandahomeV6LockSetting" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.settings.action.PANDAHOMEV6_LOCKSETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.screenlock.settings.DislodgeDoubleLockSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.MoreSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:exported="true" android:name="com.baidu.screenlock.settings.SingleSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+        <activity android:name="com.baidu.screenlock.settings.SafeSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.SafeCheckActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.SafeSettingCheckActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.SafeSettingPwdColorPickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.settings.BackupUnlockActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.SwitchSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.ShieldHomeSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:enabled="false" android:launchMode="singleInstance" android:name="com.baidu.screenlock.settings.DefaultActivity" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.screenlock.settings.CloseOtherLockerActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.SafeSettingPinActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.SafeSettingNumberPwdActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.SafeSettingGestureActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.floatlock.activity.SafeSettingGesturePwdActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.Ios7BilayerLockActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.WallpaperSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.LockToneSettingActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.AboutActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.settings.feedback.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <receiver android:name="com.baidu.screenlock.settings.feedback.SendChooseBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.settings.v5feedback.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.screenlock.settings.v5feedback.FeedbackReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.baidu.screenlock.settings.ConnectionUsActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.feedback.LockHomeCheckActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.guide.UserGuideActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.lockcore.activity.LibraryInitialActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.guide.UserGuideInitialActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <service android:name="com.baidu.screenlock.adaptation.service.NotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:launchMode="singleTask" android:name="com.baidu.screenlock.adaptation.activity.GuideFloatActivity" android:taskAffinity="com.baidu.screenlock.adaptation.activity.guidefloatactivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.settings.guide.SafeSoftwareListActivity" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:name="com.baidu.screenlock.settings.guide.NewUserGuideSetting" android:screenOrientation="portrait" android:theme="@style/SettingCustomStyle"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.baidu.screenlock.main.MainActivity" android:screenOrientation="portrait" android:taskAffinity="com.baidu.screenlock.main.mainActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.baidu.screenlock.core.lock.activity.FlashLightActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.baidu.screenlock.core.lock.activity.BrightnessActivity" android:taskAffinity="com.baidu.screenlock.main.mainActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.plugin.music.MusicListActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.baidu.screenlock.plugin.music.MusicPlayServer">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.plugin.time.MUSIC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.baidu.screenlock.wallpaper.WallpaperMain" android:screenOrientation="portrait"/>
+        <activity android:name="com.baidu.screenlock.wallpaper.cropimage.CropImage" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.baidu.screenlock.webconnect.AllDownloadManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.nd.android.pandalock.downloadmanager.SHOW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="cn.com.nd.s.ScreenLockActivity" android:screenOrientation="portrait" android:taskAffinity="cn.com.nd.s.screenlockactivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="cn.com.nd.s.OptionNewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:name="cn.com.nd.s.music.MusicService">
+            <intent-filter>
+                <action android:name="cn.com.nd.s.music.MUSIC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.com.nd.s.core.HomeKeyHelperUtil">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.homeplugin.LOCKANSWER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.baidu.screenlock.common.LockStateService">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.common.LockStateService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/livewallpaper_title" android:name="org.cocos2dx.lib.Cocos2dxGLWallpaperService" android:permission="android.permission.BIND_WALLPAPER" android:process=":wallpaper">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/ccwallpaper"/>
+        </service>
+        <service android:name="com.baidu.screenlock.lockcore.service.LiveWallPaperService" android:process=":wallpaper"/>
+        <service android:name="com.baidu.screenlock.core.upgrade.main.SoftUpdateService"/>
+        <activity android:name="com.baidu.screenlock.core.upgrade.main.SoftUpdateDialog" android:theme="@style/TipDialog"/>
+        <activity android:name="com.baidu.screenlock.core.upgrade.main.WaitForDownloadDialog" android:theme="@style/TipDialog"/>
+        <activity android:name="com.baidu.screenlock.core.theme.activity.ThemeShopV6ThemeListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.core.theme.activity.ThemeShopV6DetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.baidu.screenlock.core.common.activity.ScrollPreviewImgActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.baidu.screenlock.core.common.download.activity.DownloadManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.baidu.screenlock.downloadmanager.SHOW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.baidu.screenlock.core.common.download.core.model.DownloadServerService"/>
+        <service android:exported="true" android:name="com.baidu.screenlock.core.lock.service.LockStateManagerServer">
+            <intent-filter>
+                <action android:name="cn.com.nd.s.lock.series"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.nd.calendar.LockProvider" android:name="com.nd.calendar.provider.PandahomeProvider" android:process="@string/widget_process"/>
+        <service android:enabled="true" android:exported="true" android:name="com.nd.weather.widget.TimeService" android:process="@string/widget_process"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.weather.UIWeatherFragmentAty" android:process="@string/widget_process" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="com.nd.android.pandahome.widget.CATCH_VERTICAL_GESTURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.nd.weather.widget.UI.weather.UIWidgetCityMgrAty" android:process="@string/widget_process" android:screenOrientation="portrait" android:taskAffinity="com.nd.weather.widget.panda.ui" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nd.weather.widget.UI.UICalendarGuideAty" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.weather.UIWeatherSetAty" android:process="@string/widget_process" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.setting.UISettingActivity" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.setting.UISettingAboutAty" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.setting.UISettingWeatherAty" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.setting.UISettingPmSourceAty" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.weather.widget.UI.setting.UISubmitOpinionAty" android:process="@string/widget_process" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:name="com.nd.weather.widget.StartupReceiver" android:process="@string/widget_process">
+            <intent-filter android:priority="20">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="nd.pandahome.weather.request"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.nd.weather.widget.BootReceiver" android:process="@string/widget_process">
+            <intent-filter android:priority="20">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.nd.android.update.DownloadService" android:process=":DownloadingService"/>
+        <activity android:exported="true" android:name="com.nd.weather.widget.PandaHome.CalendarWeatherChoose" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nd.android.pandahome.widget.category"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.nd.weather.widget.PandaHome.Receiver.InstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lcc_tme_downtask_title_bg" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/downloadBnLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true">
+            <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/downprocess_horizontal" android:background="@drawable/lcc_blue_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/theme_shop_theme_downloading" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_width="37.0dip" android:layout_height="0.0dip" android:src="@drawable/lcc_tme_btn_delete_normal" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_shop_theme_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/downloadProgressLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="16.0dip" android:layout_centerInParent="true">
+        <com.baidu.screenlock.core.theme.widget.ThemePercentBarView android:id="@id/downloading_progressBar" android:layout_width="0.0dip" android:layout_height="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@android:color/black" android:id="@id/progressSize" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="100%" />
+        <LinearLayout android:orientation="vertical" android:id="@id/pausely" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ToggleButton android:id="@id/pause" android:background="@drawable/lcc_pause_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerInside" android:textOn="" android:textOff="" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/pausetxt" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="@string/common_button_pause" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/cancelly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip">
+            <ImageView android:id="@id/cancel" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/lcc_tme_btn_cancel_normal" android:scaleType="fitXY" android:onClick="commonClick" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="@string/common_button_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

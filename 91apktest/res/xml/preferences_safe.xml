@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.nd.hilauncherdev">
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_safe_password">
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_none" android:key="type_safe_none" android:widgetLayout="@layout/preferences_radio_checkbox" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_pin" android:key="type_safe_password" android:widgetLayout="@layout/preferences_radio_checkbox" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_gesture" android:key="type_safe_gest" android:widgetLayout="@layout/preferences_radio_checkbox" />
+        <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_bak" android:key="settings_safe_password_bak" android:summary="@string/settings_safe_password_bak_summary" android:widgetLayout="@layout/preferences_listpreferences_more_btn" android:defaultValue="false" />
+        <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_view_animation" android:key="setting_password_animation" android:widgetLayout="@layout/preferences_listpreferences_more_btn" android:defaultValue="false" />
+        <Preference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_view_color_picker" android:key="setting_password_colors_array" android:widgetLayout="@layout/preferences_listpreferences_more_btn" android:defaultValue="false" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+    <com.baidu.screenlock.settings.PromptPreferenceCategory android:height="45.0dip" android:title="@string/settings_safe_other" android:key="settings_safe_other">
+        <CheckBoxPreference android:layout="@layout/preference_normal_open_zns_layout" android:title="@string/setting_open_lastest_style" android:key="setting_open_lastest_style" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_force_unlock" android:key="settings_safe_force_unlock" android:summary="@string/settings_safe_force_unlock_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="true" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_password_gesture_line" android:key="settings_safe_password_gesture_line" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_bilayer_lock_switch" android:key="settings_safe_direct_open_password" android:summary="@string/settings_safe_bilayer_lock_switch_summary" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+        <CheckBoxPreference android:layout="@layout/preference_normal_layout" android:title="@string/settings_safe_lock_background_blur_switch" android:key="settings_safe_lock_background_blur_switch" android:widgetLayout="@layout/preferences_checkbox" android:defaultValue="false" />
+    </com.baidu.screenlock.settings.PromptPreferenceCategory>
+</PreferenceScreen>

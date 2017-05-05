@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/weather_shape_titlebk" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/toolbarsize">
+        <Button android:id="@id/submintInfobackId" style="@style/backButton" />
+        <TextView android:id="@id/weatherToolTextid" android:text="提交意见" style="@style/titleText_w" />
+        <Button android:gravity="center" android:id="@id/idSubmit" android:text="提 交" style="@style/rightButton" />
+    </RelativeLayout>
+    <ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:id="@id/textViewHit" style="@style/setting_catalog_title" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff454545" android:gravity="top" android:id="@id/edtBlogId" android:background="@drawable/weather_widget_edit_bk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="5" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_largeId" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+        <ListView android:id="@id/SuggestList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="3.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/weather_shape_list_line" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+</LinearLayout>

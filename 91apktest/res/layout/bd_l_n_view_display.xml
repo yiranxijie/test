@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/bd_l_n_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_l_n_clear" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/bd_l_n_clear_icon" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bd_l_n_close" android:layout_below="@id/bd_l_n_clear">
+        <ScrollView android:id="@id/bd_l_n_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.passwordlock.notification.NotificationListView android:id="@id/bd_l_n_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:id="@id/bd_l_n_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/bd_l_n_close_icon" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</merge>

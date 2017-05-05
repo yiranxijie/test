@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/notice_tips" android:background="@drawable/theme_shop_v6_theme_func_module_viewpager_tips_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#fff8b64e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="38.0dip" android:text="@string/user_feedback_guide_title" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/notice_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:src="@drawable/theme_shop_v6_theme_func_module_viewpager_tips_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/titleGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:weightSum="5.0">
+        <RadioButton android:textSize="@dimen/frame_viewpager_tab_textsize" android:textColor="@color/theme_shop_v6_rank_title_color" android:gravity="center" android:id="@id/local_lock" android:background="@drawable/theme_shop_v6_rank_title_left_bj" android:layout_width="0.0dip" android:layout_height="30.0dip" android:button="@null" android:text="@string/localtab_lock" android:layout_weight="1.0" />
+        <RadioButton android:textSize="@dimen/frame_viewpager_tab_textsize" android:textColor="@color/theme_shop_v6_rank_title_color" android:gravity="center" android:id="@id/local_theme" android:background="@drawable/theme_shop_v6_rank_title_right_bj" android:layout_width="0.0dip" android:layout_height="30.0dip" android:button="@null" android:text="@string/localtab_theme" android:layout_weight="1.0" />
+    </RadioGroup>
+    <FrameLayout android:id="@id/contentFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>
