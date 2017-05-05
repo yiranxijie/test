@@ -1,1 +1,1 @@
-hello this is test for git 
+关联本地D:\tao\test目录与远程test仓库
